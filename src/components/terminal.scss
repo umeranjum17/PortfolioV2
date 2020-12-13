@@ -1,0 +1,61 @@
+.c{
+
+    position:absolute;
+    height: 7px;
+    background:white;
+    width: 7px;
+    border:1px solid black;
+    border-radius: 50%;
+}
+.c-t{
+    top:-5px;
+    left:-5px;
+}
+
+.c-r{
+    top:-5px;
+    right:-5px;
+}
+.c-l{
+    bottom:-5px;
+    right:-5px;
+}
+.c-b{
+    bottom:-5px;
+    left:-5px;
+}.backgroundElement{
+    // width:100%;
+    // height:100%;
+    top:-20%;
+    left:-20%;
+    background:orange
+}
+.terminal__button{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    margin:5px;
+}
+#id1{
+    background-color: #FC6058;
+}
+#id2{
+    background-color: orange;
+}
+#id3{
+    background-color: green;
+}
+
+
+#cursor {
+  background: black;
+  animation: blink 1.4s infinite;
+  width:30px;
+  height:90%;
+}
+
+@keyframes blink {
+  0% {background: #fff}
+  50% {background: black}
+  100% {background: #fff}
+}
