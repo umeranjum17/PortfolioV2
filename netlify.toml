@@ -1,4 +1,4 @@
 [build]
 
 publish = "build/"
-CI='' "npm run build"
+CI='' npm run build
