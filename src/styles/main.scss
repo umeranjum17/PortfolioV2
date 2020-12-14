@@ -1,3 +1,5 @@
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 @import "tailwindcss/base";
 @import "./base";
 
@@ -6,3 +8,23 @@
 
 @import "tailwindcss/utilities";
 /* @import "./custom-utilities.css"; */
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+   background:#0a66c2
+}
+
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+   
+  
+}

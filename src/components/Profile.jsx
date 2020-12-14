@@ -2,7 +2,7 @@ import React from 'react'
 import me from "../assets/me.gif"
 const Profile = () => {
     return (
-        <div className="w-64 h-64" style={{marginTop:"-100px",marginLeft:"100px",border:"4px solid black"}}>
+        <div className="w-48 h-48 md:w-64 my-10 lg:w-64" style={{border:"4px solid black"}}>
             <img src={me} alt=""/>
         </div>
     )
