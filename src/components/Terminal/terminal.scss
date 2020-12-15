@@ -1,0 +1,44 @@
+.c-t{
+    position:absolute;
+    height: 7px;
+    background:black;
+    width: 7px;
+    border-radius: 50%;
+    top:0;
+    left:0;
+}
+
+.c-r{
+    position:absolute;
+    height: 7px;
+    background:black;
+    width: 7px;
+    border-radius: 50%;
+    top:0;
+    right:0;
+}
+.c-l{
+    position:absolute;
+    height: 7px;
+    background:black;
+    width: 7px;
+    border-radius: 50%;
+    bottom:-5px;
+    right:-5px;
+}
+.c-b{
+    position:absolute;
+    height: 7px;
+    background:black;
+    width: 7px;
+    border-radius: 50%;
+    bottom:0;
+    left:0;
+}.backgroundElement{
+    // width:100%;
+    // height:100%;
+    top:-20%;
+    left:-20%;
+    
+    background:orange
+}
