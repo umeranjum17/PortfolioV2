@@ -17,7 +17,7 @@ const Contact = () => {
   }
   return (
     <>
-      <h1 className="font-black text-3xl my-10 text-center">
+      <h1 className="font-black text:xl md:text-3xl my-10 text-center">
         Drop Me a mail I would Love to talk to you....
         </h1>
       <form className="w-full max-w-lg mx-auto" onSubmit={submitForm}>
@@ -26,7 +26,7 @@ const Contact = () => {
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
               First Name
       </label>
-            <input onChange={handleChange} name="firstName" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" />
+            <input onChange={handleChange} name="firstName" className="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" />
 
           </div>
           <div className="w-full md:w-1/2 px-3">
