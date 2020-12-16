@@ -10,7 +10,7 @@ const Contact = () => {
   })
   const submitForm = (e) => {
     e.preventDefault()
-    Axios.post("https://us-central1-notification-ceb6a.cloudfunctions.net/email",form)
+    Axios.post("https://us-central1-notification-ceb6a.cloudfunctions.net/email", form)
   }
   const handleChange = (e) => {
     setFormData({ ...form, [e.target.name]: e.target.value })
@@ -46,20 +46,19 @@ const Contact = () => {
         </div>
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full px-3">
-            <label  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
               Message
 
       </label>
-<textarea onChange={handleChange} name="msg" cols="30" rows="10"  className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" ></textarea>
+            <textarea onChange={handleChange} name="msg" cols="30" rows="10" className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" ></textarea>
           </div>
         </div>
-        <div className="md:flex md:items-center">
-          <div className="md:w-1/3">
+        <div className="mb-10 md:flex md:items-center justify-end">
+          <div className="w-full flex justify-end">
             <button className="shadow  focus:shadow-outline bg-black focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
               Send
       </button>
           </div>
-          <div className="md:w-2/3"></div>
         </div>
       </form>
     </>
