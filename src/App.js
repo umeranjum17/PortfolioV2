@@ -15,8 +15,8 @@ function App() {
       y: 100,
       opacity: 0,
       ease: "elastic.inOut",
-      duration: 1.4,
-      stagger: 0.2
+      duration: 2.4,
+      stagger: 0.4
     });
   }, [])
   return (
