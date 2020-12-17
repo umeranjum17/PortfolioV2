@@ -7,9 +7,13 @@ const Contact = () => {
     msg: ""
 
   })
-  const submitForm = (e) => {
+  const submitForm =async (e) => {
     e.preventDefault()
-    Axios.post("https://us-central1-notification-ceb6a.cloudfunctions.net/email", form)
+    try{
+   let res=await Axios.post("https://api.umerfarooq.dev/.netlify/functions/checkUsers", form)}
+   catch(e){
+     console.log(e)
+   }
   }
   const handleChange = (e) => {
     setFormData({ ...form, [e.target.name]: e.target.value })
@@ -28,7 +32,7 @@ const Contact = () => {
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                Name
       </label>
-            <input onChange={handleChange} name="lastName" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
+            <input onChange={handleChange} name="name" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
           </div>
         </div>
         <div className="flex flex-wrap -mx-3 mb-6">
