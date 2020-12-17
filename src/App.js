@@ -23,7 +23,7 @@ function App() {
       opacity: 0,
       ease: "elastic.inOut",
       duration: 2.4,
-      stagger: 0.3,
+      stagger: 0.6,
     });
     return () => {
       divRef.current.removeEventListener("scroll", handleScroll);
