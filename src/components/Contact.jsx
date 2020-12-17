@@ -10,7 +10,7 @@ const Contact = () => {
   const submitForm =async (e) => {
     e.preventDefault()
     try{
-   let res=await Axios.post("https://api.umerfarooq.dev/.netlify/functions/checkUsers", form, {
+   let res=await Axios.post("https://api.umerfarooq.dev/.netlify/functions/checkUsers", JSON.stringify(form), {
         headers: {
             'Content-Type': 'application/json',
         }
