@@ -28,3 +28,27 @@
    
   
 }
+
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  padding: 2em;
+  min-width: 20em;
+  max-width: 70%;
+
+  overflow: hidden !important;
+  border-radius: 1em;
+  transform: translate(-50%, -50%);
+  outline: transparent;
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  left: 0;
+  background-color: rgba(0,0,0,.4);
+}
