@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Axios } from '../firebase/firebaseConfig'
 const Contact = () => {
   const [form, setFormData] = useState({
-    astName: "",
+    name: "",
     email: "",
     msg: ""
 
@@ -10,8 +10,15 @@ const Contact = () => {
   const submitForm =async (e) => {
     e.preventDefault()
     try{
-   let res=await Axios.post("https://api.umerfarooq.dev/.netlify/functions/checkUsers", form)}
-   catch(e){
+   let res=await Axios.post("https://api.umerfarooq.dev/.netlify/functions/checkUsers", form, {
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+  console.log(res)
+  }
+
+   catch(e){                                                                                                                                                                                                                                                                                                                                      
      console.log(e)
    }
   }
