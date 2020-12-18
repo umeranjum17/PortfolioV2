@@ -65,7 +65,7 @@ function App() {
             onScroll={() => {
               console.log("firing ");
             }}
-            class="grid grid-flow-col grid-rows-6 grid-cols-1 md:grid-rows-2 md:grid-cols-3 gap-4"
+            class="flex flex-wrap  "
           >
             {data.projects.map((p, i) => (
               <Card project={p} />

@@ -25,9 +25,9 @@ const Terminal = () => {
                         {TerminalButtons}
                     </div>
                 </div>
-                <div className="flex-1 bg-gray-800 justify-center items-center" style={{ height: "57vh" }}>
+                <div className="flex-1 bg-gray-800 justify-center items-center">
                     <div className="flex flex-col md:flex-row  justify-between items-center p-10" style={{ height: "100%" }}>
-                        <div className="flex-1 h-48 w-32">
+                        <div className="flex-1 md:h-full w-32 md:overflow-hidden">
                             <Profile />
                         </div>
                         <div className="flex-1 bg-gray-800 relative" style={{ background: "rgba(0,0,0,0.1)" }}>
@@ -53,5 +53,4 @@ const Terminal = () => {
         </>
     )
 }
-
 export default Terminal

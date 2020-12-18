@@ -3,7 +3,7 @@ import React from 'react'
 const Card = ({project:{title,description,image}}) => {
     console.log(image)
     return (
-        <div  className=" m-4 h-72 w-72  shadow-md rounded-md">
+        <div  className=" w-full md:w-1/4 m-1/6 shadow-md rounded-md" style={{margin:"2% 4%"}}>
            <img alt="image-project"  src={require('../assets/'+image)} ></img> 
            <h3 className="p-3 text-xl font-semibold">
               {title}
